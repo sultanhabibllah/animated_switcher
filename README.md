@@ -1,17 +1,38 @@
-# animated_switcher
+# AnimatedSwitcher Demo
 
-A new Flutter project.
+A simple Flutter application demonstrating how the `AnimatedSwitcher` widget animates transitions between different UI states.
+
+## About the Project
+
+The app simulates a payment process. When the user clicks the **Pay Now** button, the payment status changes from pending to successful with a smooth animation. Clicking **Reset Payment** returns it to the original state.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Clone the repository and open it in VS Code.
 
-A few resources to get you started if this is your first Flutter project:
+Run the following commands:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Make sure an Android emulator or another supported device is running.
+
+## AnimatedSwitcher Properties
+
+The demo focuses on three properties:
+
+1. **duration:** Controls how long the animation takes. The demo uses 500 milliseconds and can be changed to 1500 milliseconds.
+2. **transitionBuilder:** Defines the animation style. The demo compares `FadeTransition` and `SlideTransition`.
+3. **switchInCurve:** Controls the timing of the incoming animation. The demo compares `Curves.linear` and `Curves.easeOut`.
+
+These properties can be modified in `lib/screens/payment_screen.dart` to observe their effects.
+
+## Screenshot
+
+### Payment Pending
+![Payment Pending](screenshots/payment_pending.png)
+
+### Payment Successful
+![Payment Successful](screenshots/payment_successful.png)
