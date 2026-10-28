@@ -32,7 +32,7 @@ These properties can be modified in `lib/screens/payment_screen.dart` to observe
 ## Screenshot
 
 ### Payment Pending
-![Payment Pending](screenshots/payment_pending.png)
+![Payment Pending](lib/screenshots/payment_pending.png)
 
 ### Payment Successful
-![Payment Successful](screenshots/payment_successful.png)
+![Payment Successful](lib/screenshots/payment_successful.png)
